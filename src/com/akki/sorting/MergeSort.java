@@ -1,5 +1,10 @@
 package com.akki.sorting;
 
+
+/**
+ * @author Akhilesh.Agarwal
+ * Complexity nlogn
+ */
 public class MergeSort {
 	// Merges two subarrays of arr[].
 	// First subarray is arr[l..m]
