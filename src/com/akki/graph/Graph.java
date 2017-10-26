@@ -1,4 +1,4 @@
-package com.akki.ds;
+package com.akki.graph;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ public class Graph {
 		graph.vertices=new Node[verticesString.length];
 		BFS bfs=new BFS();
 		DFS dfs=new DFS();
-		graph.setVertices(graph.addvertices(verticesString));
+		graph.addvertices(verticesString);
 		graph.addEdge(0, 1);
 		graph.addEdge(1, 6);
 		graph.addEdge(5, 0);
@@ -33,11 +33,10 @@ public class Graph {
 		vertices[node2].getAdjacentNodes().add(vertices[node1]);
 	}
 
-	Node[] addvertices(String[] args) {
+	void addvertices(String[] args) {
 		for (int i = 0; i < args.length; i++) {
-			vertices[i] = createNode(args[i]);
+			this.vertices[i] = createNode(args[i]);
 		}
-		return vertices;
 	}
 
 	Node createNode(String name) {

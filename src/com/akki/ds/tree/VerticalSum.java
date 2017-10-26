@@ -1,8 +1,6 @@
-package com.akki.algo;
+package com.akki.ds.tree;
 
 import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
 
 //Class for a tree node
 class TreeNode {
@@ -56,46 +54,7 @@ class Tree {
 		root = n;
 	}
 
-	public void horizontalView(TreeNode root) {
-
-		// base case
-		if (root == null) {
-			return;
-		}
-
-		// Creates an empty hashMap hM
-		Map<Integer, Integer> hM = new TreeMap<Integer, Integer>();
-
-		// Calls the VerticalSumUtil() to store the
-		// vertical sum values in hM
-		horizontalViewUtil(root, 0, hM);
-
-		// Prints the values stored by VerticalSumUtil()
-		if (hM != null) {
-			System.out.println(hM.values());
-		}
-
-	}
-
-	private void horizontalViewUtil(TreeNode root, int horizontalDistance, Map<Integer, Integer> hM) {
-
-		// base case
-		if (root == null) {
-			return;
-		}
-
-		// Store the values in hM for left subtree
-		horizontalViewUtil(root.left(), horizontalDistance - 1, hM);
-
-		// Update vertical sum for hD of this node
-		// int prevSum = (hM.get(horizontalDistance) == null) ? 0 :
-		// hM.get(horizontalDistance);
-		hM.put(horizontalDistance, root.key());
-
-		// Store the values in hM for right subtree
-		horizontalViewUtil(root.right(), horizontalDistance + 1, hM);
-	}
-
+	
 	// Method to be called by the consumer classes
 	// like Main class
 	public void VerticalSumMain() {
@@ -169,7 +128,6 @@ public class VerticalSum {
 
 		System.out.println("Following are the values of" + " vertical sums with the positions"
 				+ " of the columns with respect to root ");
-		//t.VerticalSumMain();
-		t.horizontalView(root);
+		t.VerticalSumMain();
 	}
 }

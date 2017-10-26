@@ -1,9 +1,9 @@
-package com.akki.ds;
+package com.akki.graph;
 
 import java.util.Iterator;
 import java.util.Stack;
 
-import com.akki.ds.Graph.Node;
+import com.akki.graph.Graph.Node;
 
 public class DFS {
 	

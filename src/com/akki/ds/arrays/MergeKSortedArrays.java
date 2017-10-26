@@ -1,4 +1,4 @@
-package com.akki.algo.arrays;
+package com.akki.ds.arrays;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class MergeKSortedArrays {
 	public static int[] mergeKSortedArray(int[][] arr) {
 		//PriorityQueue is heap in Java 
-		PriorityQueue<ArrayContainer> queue = new PriorityQueue<ArrayContainer>();
+		PriorityQueue<ArrayContainer> queue = new PriorityQueue<>();
 		int total=0;
  
 		//add arrays to heap

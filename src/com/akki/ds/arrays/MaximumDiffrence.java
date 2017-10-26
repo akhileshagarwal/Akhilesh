@@ -1,4 +1,4 @@
-package com.akki.algo.arrays;
+package com.akki.ds.arrays;
 
 public class MaximumDiffrence 
 {

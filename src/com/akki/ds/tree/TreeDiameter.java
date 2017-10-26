@@ -1,4 +1,4 @@
-package com.akki.algo;
+package com.akki.ds.tree;
 
 //Recursive optimized Java program to find the diameter of a
 //Binary Tree

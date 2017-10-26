@@ -1,10 +1,10 @@
-package com.akki.ds;
+package com.akki.graph;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import com.akki.ds.Graph.Node;
+import com.akki.graph.Graph.Node;
 
 public class BFS {
 	Queue<Node> queue=new LinkedList<>();
@@ -19,7 +19,7 @@ public class BFS {
 			Iterator<Node> it=current.getAdjacentNodes().iterator();
 			while(it.hasNext()){
 				Node next=it.next();
-				if(next.isVisited==false){
+				if(next.isVisited==Boolean.FALSE){
 					next.setVisited(true);
 					System.out.println(next);
 					queue.add(next);
