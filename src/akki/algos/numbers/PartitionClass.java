@@ -3,7 +3,7 @@ package akki.algos;
 public class PartitionClass {
 
 	public static void main(String[] args) {
-		printAllUniqueParts(10);
+		printAllUniqueParts(20);
 
 	}
 
