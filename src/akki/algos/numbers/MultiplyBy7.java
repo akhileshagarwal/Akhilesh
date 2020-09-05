@@ -1,4 +1,4 @@
-package akki.algos;
+package akki.algos.numbers;
 
 public class MultiplyBy7 {
 public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package akki.algos;
+package akki.algos.numbers;
 
 import java.util.Arrays;
 import java.util.Random;

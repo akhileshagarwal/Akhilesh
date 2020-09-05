@@ -20,6 +20,7 @@ public class Akhilesh {
 		List list = Arrays.asList(words);
 		Collections.sort(list, collator);
 		list.toArray();
+		System.out.println(list);
 		String s = "BDKJSCDk";
 		System.out.println(generateRule(s.toCharArray()));
 	}

@@ -1,4 +1,4 @@
-package akki.algos;
+package akki.algos.string;
 
 public class StringPermutations {
 	public static void main(String args[]) {

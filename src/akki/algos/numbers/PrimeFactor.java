@@ -1,4 +1,4 @@
-package akki.algos;
+package akki.algos.numbers;
 
 public class PrimeFactor {
 	    // A function to print all prime factors

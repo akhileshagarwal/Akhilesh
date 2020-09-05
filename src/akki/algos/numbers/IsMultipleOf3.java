@@ -1,4 +1,4 @@
-package akki.algos;
+package akki.algos.numbers;
 public class IsMultipleOf3 {
 	public static void main(String[] args) {
 		 Integer num = 100;
