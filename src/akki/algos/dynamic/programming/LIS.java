@@ -24,10 +24,6 @@ import java.util.TreeSet;
  * @author Akhilesh.Agarwal
  *
  */
-/**
- * @author Akhilesh.Agarwal
- *
- */
 class LIS {
 	/*
 	 * lis() returns the length of the longest increasing subsequence in arr[]
