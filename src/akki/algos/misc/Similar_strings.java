@@ -14,7 +14,7 @@ public class Similar_strings {
         for (int i = 0; i < s1.length(); i++) 
             char_count[s1.charAt(i) - 'a']++;        
  
-        // iterate through the second string
+        // iterate through the second sting
         // update char_count.
         // if character is not found in char_count
         // then increase count
